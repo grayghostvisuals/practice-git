@@ -1,5 +1,7 @@
-Practice-Git
-Git Reference &rarr; [http://gitref.org/basic](http://gitref.org/basic)
+Get your Practice-Git on!
+
+Git Reference           &rarr; [http://gitref.org/basic](http://gitref.org/basic)
+Quick Command Practice  &rarr; [http://try.github.com](http://try.github.com)
 ============
 
 Welcome to my practice git repository where you can eff up as much as you'd like.
