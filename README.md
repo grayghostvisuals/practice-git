@@ -18,6 +18,9 @@ Downloads objects and references from another repository.
 ``git merge upstream/master``
 Merges any changes fetched into your working files
 
+``git add [file]``
+Add the file you wish to place in the working tree
+
 ``git rebase``
 Rebase allows you to [easily change a series of commits, reordering, editing, or squashing commits together into a single commit](https://help.github.com/articles/interactive-rebase).
 *Be warned: it's considered bad practice to rebase commits which you have already pushed to a remote repo. Doing so may invoke the wrath of the git gods.
