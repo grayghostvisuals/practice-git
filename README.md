@@ -1,10 +1,7 @@
 Practice-Git
 ============
-
-This is a repository where you can eff up as much as you'd like. Here we learn all things git.
-Feel free to send Pull Requests to see what it's like when someone asks you 
-"Can you squash your commits for us" and you're all like "how the hell do I do that"
-
+Git Reference &rarr; [http://gitref.org/basic](http://gitref.org/basic)
+Welcome to my practice git repository where you can eff up as much as you'd like. Here we learn all things git. Feel free to send Pull Requests to see what it's like when someone asks you "Can you squash your commits for us" and you're all like "how the hell do I do that?" This is where we make those mistakes so don't be scared :) Fork this repo and send me a Pull Request with anything including Grandma Peggy's Crumbled Oatmeal Cookie Recipe.
 
 ## Typical and highly used git commands
 
@@ -22,8 +19,8 @@ Merges any changes fetched into your working files
 Add the file you wish to place in the working tree
 
 ``git commit -m 'the message goes here for the commit'
-this will commit the files from your working tree and stage them for pushing to your remote reposity.
-Think of this as a theater stage where the commits are the actors we're watching.
+Commits the files from your working tree and stages them for your remote reposity.
+Think of this 'stage' if you will, as a theater stage where the commits are the actors we're watching.
 
 ``git rebase``
 Rebase allows you to [easily change a series of commits, reordering, editing, or squashing commits together into a single commit](https://help.github.com/articles/interactive-rebase).
