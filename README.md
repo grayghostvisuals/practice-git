@@ -1,9 +1,9 @@
 Get your Practice-Git on!
 ============
 
-Git Reference................................................&rarr; [http://gitref.org/basic](http://gitref.org/basic)
-Quick Command Practice.......................................&rarr; [http://try.github.com](http://try.github.com)
-How to GitHub: Fork, Branch, Track, Squash and Pull Request..&rarr; [http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
+* Git Reference................................................&rarr; [http://gitref.org/basic](http://gitref.org/basic)
+* Quick Command Practice.......................................&rarr; [http://try.github.com](http://try.github.com)
+* How to GitHub: Fork, Branch, Track, Squash and Pull Request..&rarr; [http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
 
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
 Here we learn all things git. Feel free to send me Pull Requests just to discover what it's like when a Repo Master asks you
