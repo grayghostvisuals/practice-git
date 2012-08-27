@@ -54,10 +54,10 @@ It's all good yo! Learning is the prize in this game.
 ``git commit -m 'the message goes here for the commit'``
 * Records a snapshot of the project into your history at the time of your commit.
 
-``'*.<file_extension>'``
+``git add '*.<file_extension>'``
 * This command adds all file types with the same extension, especially from different directories. Without quotes the command will only execute within the same directory it's been called from.
 
-``got rm --cached <file>``
+``git rm --cached <file>``
 * Unstages a file from the working tree (i.e. stops tracking the file).
 
 ``git log``
@@ -66,7 +66,7 @@ It's all good yo! Learning is the prize in this game.
 ``git log --summary``
 * See where new files were added for the first time or where files were deleted.
 
-``git remote add origin git@github.com:<user_name>/<repo_name>.git
+``git remote add origin git@github.com:<user_name>/<repo_name>.git``
 * Creates a brand new remote repository.
 
 ``git reset <file>``
