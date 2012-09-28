@@ -1,4 +1,4 @@
-// Object Reference
+// Object Reference -
 var obj = document.getElementById('id');
 
 // Object Event Listener
