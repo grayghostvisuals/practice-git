@@ -1,6 +1,7 @@
 Get your Practice-Git on!
 ============
 
+
 * Git Reference................................................[http://gitref.org/basic](http://gitref.org/basic)
 * Pro Git Online Book..........................................[http://git-scm.com/book](http://git-scm.com/book)
 * Quick Command Practice.......................................[http://try.github.com](http://try.github.com)
@@ -8,6 +9,8 @@ Get your Practice-Git on!
 * Learn Git Online.............................................[http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
 * Git: The Simple Guide........................................[http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
 * Git Immersion................................................[http://gitimmersion.com](http://gitimmersion.com)
+
+
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
 Here we learn all things git. Feel free to send me Pull Requests just to discover what it's like when a Repo Master asks you
 
