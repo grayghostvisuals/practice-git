@@ -7,7 +7,7 @@ Get your Practice-Git on!
 * How to GitHub: Fork, Branch, Track, Squash and Pull Request..[http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
 * Learn Git Online.............................................[http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
 * Git: The Simple Guide........................................[http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
-
+* Git Immersion................................................[http://gitimmersion.com](http://gitimmersion.com)
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
 Here we learn all things git. Feel free to send me Pull Requests just to discover what it's like when a Repo Master asks you
 
@@ -69,8 +69,17 @@ It's all good yo! Learning is the prize in this game.
 ``git remote add origin git@github.com:<user_name>/<repo_name>.git``
 * Creates a brand new remote repository.
 
+``git remote -v``
+* Show a list of the current remote repositories
+
 ``git reset <file>``
 * Removes the desired file from staging area.
+
+``git branch -r``
+* List all the remote branches currently tracked
+
+``git remote prune origin``
+* Deletes branch locally if it has been removed remotely. Helps to remove stale references.
 
 ``git checkout <target>``
 * Changes the desired target back to the state of the last commit. A target can be a file or a directory (for example).
