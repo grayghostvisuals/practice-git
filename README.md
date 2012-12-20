@@ -1,15 +1,15 @@
 :octocat: Git Your Practice On!
 ============
 
-
-* Git Reference................................................[http://gitref.org/basic](http://gitref.org/basic)
-* Pro Git Online Book..........................................[http://git-scm.com/book](http://git-scm.com/book)
-* Quick Command Practice.......................................[http://try.github.com](http://try.github.com)
-* Git Real.....................................................[http://www.codeschool.com/courses/git-real](http://www.codeschool.com/courses/git-real)
-* How to GitHub: Fork, Branch, Track, Squash and Pull Request..[http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
-* Learn Git Online.............................................[http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
-* Git: The Simple Guide........................................[http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
-* Git Immersion................................................[http://gitimmersion.com](http://gitimmersion.com)
+* Git Reference [http://gitref.org/basic](http://gitref.org/basic)
+* Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
+* Git Ready [http://gitready.com](http://gitready.com)
+* Quick Command Practice [http://try.github.com](http://try.github.com)
+* Git Real [http://www.codeschool.com/courses/git-real](http://www.codeschool.com/courses/git-real)
+* How to GitHub: Fork, Branch, Track, Squash and Pull Request [http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
+* Learn Git Online [http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
+* Git: The Simple Guide [http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
+* Git Immersion [http://gitimmersion.com](http://gitimmersion.com)
 
 
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
