@@ -2,6 +2,7 @@
 var obj = document.getElementById('id');
 
 // Object Event Listener
+// this adds nothing to the conversation, not even oatmeal cookies
 obj.addEventListener('touchmove', function(event) {
 
   // If there's exactly one finger inside this element
