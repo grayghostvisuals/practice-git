@@ -10,6 +10,7 @@
 * Learn Git Online [http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
 * Git: The Simple Guide [http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
 * Git Immersion [http://gitimmersion.com](http://gitimmersion.com)
+* Git Branching [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
 
 
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
