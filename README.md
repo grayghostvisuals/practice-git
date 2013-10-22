@@ -38,146 +38,226 @@ It's all good yo! Learning is the prize in this game.
 ```bash
 git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
 ```
-* Clones your remote origin repo locally
+Clones your remote origin repo locally
 
 ```bash
 git fetch upstream
 ```
-* Pulls in the remote changes not present in your local repo. Downloads objects and references from another repository.
+Pulls in the remote changes not present in your local repo. Downloads objects and references from another repository.
 
 ```bash
 git merge upstream/master
 ```
-* Merges any changes fetched into your working files
+Merges any changes fetched into your working files
 
-``git add <file>``
-* Start tracking new files and also stage changes to already tracked files
+```bash
+git add <file>
+```
+Start tracking new files and also stage changes to already tracked files
 
-``git status`` and ``git diff``
+``git status`` & ``git diff``
 * Tells us what files and assets have been modified and staged
 
-``git status -s``
-* This will display what files have been removed, changed or modified. 
+```bash
+git status -s
+```
+This will display what files have been removed, changed or modified. 
+
 * (M)  - modified
 * (A)  - added
 * (AM) - file has not been altered since it was last added
 
-``git commit -m 'the message goes here for the commit'``
-* Records a snapshot of the project into your history at the time of your commit.
+```bash
+git commit -m 'the message goes here for the commit'
+```
+Records a snapshot of the project into your history at the time of your commit.
 
-``git add '*.<file_extension>'``
-* This command adds all file types with the same extension, especially from different directories. Without quotes the command will only execute within the same directory it's been called from.
+```bash
+git add '*.<file_extension>'
+```
+This command adds all file types with the same extension, especially from different directories. Without quotes the command will only execute within the same directory it's been called from.
 
-``git rm --cached <file>``
-* Unstages a file from the working tree (i.e. stops tracking the file).
+```bash
+git rm --cached <file>
+```
+Unstages a file from the working tree (i.e. stops tracking the file).
 
-``git log``
-* Remembers all the changes we've committed so far, in the order we committed them.
+```bash
+git log
+```
+Remembers all the changes we've committed so far, in the order we committed them.
 
-``git log --summary``
-* See where new files were added for the first time or where files were deleted.
+```bash
+git log --summary
+```
+See where new files were added for the first time or where files were deleted.
 
-``git remote add origin git@github.com:<user_name>/<repo_name>.git``
-* Creates a brand new remote repository.
+```bash
+git remote add origin git@github.com:<user_name>/<repo_name>.git
+```
+Creates a brand new remote repository.
 
-``git remote -v``
-* Show a list of the current remote repositories
+```bash
+git remote -v
+```
+Show a list of the current remote repositories
 
-``git reset <file>``
-* Removes the desired file from staging area.
+```bash
+git reset <file>
+```
+Removes the desired file from staging area.
 
-``git branch -r``
-* List all the remote branches currently tracked
+```bash
+git branch -r
+```
+List all the remote branches currently tracked
 
-``git remote prune origin``
-* Deletes branch locally if it has been removed remotely. Helps to remove stale references.
+```bash
+git remote prune origin
+```
+Deletes branch locally if it has been removed remotely. Helps to remove stale references.
 
-``git checkout <target>``
-* Changes the desired target back to the state of the last commit. A target can be a file or a directory (for example).
+```bash
+git checkout <target>
+```
+Changes the desired target back to the state of the last commit. A target can be a file or a directory (for example).
 
-``git rebase``
-* Rebase allows you to [easily change a series of commits, reordering, editing, or squashing commits together into a single commit](https://help.github.com/articles/interactive-rebase).
-* Be warned: it's considered bad practice to rebase commits which you have already pushed to a remote repo. Doing so may invoke the wrath of the git gods. [https://help.github.com/articles/interactive-rebase](https://help.github.com/articles/interactive-rebase)
+```bash
+git rebase
+```
+Rebase allows you to [easily change a series of commits, reordering, editing, or squashing commits together into a single commit](https://help.github.com/articles/interactive-rebase).
+
+Be warned: it's considered bad practice to rebase commits which you have already pushed to a remote repo. Doing so may invoke the wrath of the git gods. [https://help.github.com/articles/interactive-rebase](https://help.github.com/articles/interactive-rebase)
 
 ##Adding
-``git add <list of files>`` 
+```bash
+git add <list of files>
+``` 
 (i.e. git add read me.md license.txt. Can be multiples)
 
-``git add --all``
+```bash
+git add --all
+```
 Add all the new files since last
 
-``git add *.txt``
+```bash
+git add *.txt
+```
 Add all txt files in directory
 
 ##Staging
-``git diff``
+```bash
+git diff
+```
 Show unstated differences since last commit
 
-``git diff --staged``
+```bash
+git diff --staged
+```
 Gets the staged differences and doisplays what has changed since our last commit
 
 ##Reverting
-``git reset HEAD <file>``
+```bash
+git reset HEAD <file>
+```
 Head is the last commit on the current branch we are on. What if you stage something you didn't need to be staged? This is the key
 
-``git checkout -- <file>``
+```bash
+git checkout -- <file>
+```
 Blow away all changes to a file since last commit
 
-``git reset --soft HEAD^``
+```bash
+git reset --soft HEAD^
+```
 What if you regret commit? This will undo your last commit. (^ means move commit before HEAD and puts changes into staging).
 
-``git reset --hard HEAD``
+```bash
+git reset --hard HEAD
+```
 Undo Last commit and all changes
 
-``git commit --amend -m "added another file to the commit'``
+```bash
+git commit --amend -m "added another file to the commit'
+```
 New commit message will override previous commit message
 
 ##Remotes
 "Remotes are kinda like bookmarks"
 
-``git remote -v``
+```bash
+git remote -v
+```
 Show the current remote repos
 
-``git remote add <name> <address>``
+```bash
+git remote add <name> <address>
+```
 Add a new remote repo
 
-``git remote rm <name>``
+```bash
+git remote rm <name>
+```
 Remove remote repo
 
 ##Cloning, Branching, Fetching &amp; Merging
-``git fetch``
+```bash
+git fetch
+```
 Pulls down any changes but doesn't merge them
 
-``git branch <branch name>``
+```bash
+git branch <branch name>
+```
 Makes a new branch
 
-``git checkout <branch name>``
+```bash
+git checkout <branch name>
+```
 Switching branch and on a different timeline
 
-``git merge <branch>``
+```bash
+git merge <branch>`
+``
 Merges branch into master
 
-``git branch -d <branch name>``
+```bash
+git branch -d <branch name>
+```
 Deletes branch
 
-``git checkout -b <branch name>``
+```bash
+git checkout -b <branch name>
+```
 Creates a new branch and then switches to it
 
+```bash
+:wq + enter
+```
 VI Editor Quick Key Exit
-``:wq + enter``
 
 Fetching a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
-``g fetch origin``
-``git checkout -t <remote>/<branch>``
+```bash
+g fetch origin
+```
+```bash
+git checkout -t <remote>/<branch>
+```
 
 ##Pushing &amp; Pulling
-``git push -u origin master (remote repo name, local branch name) -u`` 
+```bash
+git push -u origin master (remote repo name, local branch name) -u
+``` 
 Lets you just run git push later on without specifying name and branch
 
-``git pull``
+```bash
+git pull
+```
 Pull changes in and syncs up your repo
 
-``git pull``
+```bash
+git pull
+```
 Fetches or syncs local with remote repo. Doesn't update local code
 
 ##Branching
