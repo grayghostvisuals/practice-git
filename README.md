@@ -1,5 +1,4 @@
-:octocat: Git Your Practice On!
-============
+##:octocat: Git Your Practice On!
 
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
 * Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
@@ -28,12 +27,12 @@ and you're all like...
 
 This is where we make those mistakes ... so don't be scared :)
 
-##Instructions
+###Instructions
 
 Fork this repo and send me a Pull Request with anything from Grandma Peggy's Crumbled Oatmeal Cookie Recipe to your favorite Sublime Text 2 preferences.
 It's all good yo! Learning is the prize in this game.
 
-## Typical and highly useful git commands
+### Typical and highly useful git commands
 
 ```bash
 git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
@@ -129,7 +128,7 @@ Rebase allows you to [easily change a series of commits, reordering, editing, or
 
 Be warned: it's considered bad practice to rebase commits which you have already pushed to a remote repo. Doing so may invoke the wrath of the git gods. [https://help.github.com/articles/interactive-rebase](https://help.github.com/articles/interactive-rebase)
 
-##Adding
+###Adding
 ```bash
 git add <list of files>
 ``` 
@@ -145,7 +144,7 @@ git add *.txt
 ```
 Add all txt files in directory
 
-##Staging
+###Staging
 ```bash
 git diff
 ```
@@ -156,7 +155,7 @@ git diff --staged
 ```
 Gets the staged differences and doisplays what has changed since our last commit
 
-##Reverting
+###Reverting
 ```bash
 git reset HEAD <file>
 ```
@@ -173,6 +172,11 @@ git reset --soft HEAD^
 What if you regret commit? This will undo your last commit. (^ means move commit before HEAD and puts changes into staging).
 
 ```bash
+git reset --hard HEAD^
+```
+Traverse through commits and revert back one by one.
+
+```bash
 git reset --hard HEAD
 ```
 Undo Last commit and all changes
@@ -182,7 +186,7 @@ git commit --amend -m "added another file to the commit'
 ```
 New commit message will override previous commit message
 
-##Remotes
+###Remotes
 "Remotes are kinda like bookmarks"
 
 ```bash
@@ -200,7 +204,7 @@ git remote rm <name>
 ```
 Remove remote repo
 
-##Cloning, Branching, Fetching &amp; Merging
+###Cloning, Branching, Fetching &amp; Merging
 ```bash
 git fetch
 ```
@@ -217,8 +221,8 @@ git checkout <branch name>
 Switching branch and on a different timeline
 
 ```bash
-git merge <branch>`
-``
+git merge <branch>
+```
 Merges branch into master
 
 ```bash
@@ -236,15 +240,14 @@ Creates a new branch and then switches to it
 ```
 VI Editor Quick Key Exit
 
-Fetching a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
 ```bash
 g fetch origin
-```
-```bash
+
 git checkout -t <remote>/<branch>
 ```
+Fetching a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
 
-##Pushing &amp; Pulling
+###Pushing &amp; Pulling
 ```bash
 git push -u origin master (remote repo name, local branch name) -u
 ``` 
@@ -260,51 +263,87 @@ git pull
 ```
 Fetches or syncs local with remote repo. Doesn't update local code
 
-##Branching
-``git branch -r``
+###Branching
+```bash
+git branch -r
+```
 List all remote branches
 
-``git remote show origin``
+```bash
+git remote show origin
+```
 Show all the remote branches
 
-``git push origin :<branch name>``
+```bash
+git push origin :<branch name>
+```
 Deletes the remote branch
 
-``git branch -D <branch name>``
+```bash
+git branch -D <branch name>
+```
 Delete the local repo branch and if you don't want the commits any longer on it then delete them too.
 
-``git remote prune origin``
+```bash
+git remote prune origin
+```
 Deletes the branch locally if it has been removed remotely. Helps to remove stale references.
 
-##Rebasing
+###Rebasing
 "Merge commits are bad"
 
-``git rebase``
+```bash
+git rebase
+```
 Move all changes to master local which are not in origin/master remote to a temporary area
 
-##History
-``git log``
+###History
+```bash
+git log
+```
 Viewing the commits history
 
-``git config --global color.ui true``
+```bash
+git config --global color.ui true
+```
 Color codes the commit SHA
 
-``git log --pretty=oneline`` or ``git log --graph --oneline --all``
+```bash
+git log --pretty=oneline
+```
+
+or 
+
+```bash
+git log --graph --oneline --all
+```
 Commit and history is one line
 
-``git log --pretty=format:"%h``
+```bash
+git log --pretty=format:"%h
+```
 Exactly how you want the output using placeholders ( use git help log )
 
-``Date Ranges``
+```bash
+Date Ranges
+```
 Git log --until
 
-##Removal
-``git rm <filename>``
+###Removal
+```bash
+git rm <filename>
+```
 Removes file completely
 
-``git rm --cached <file names>``
+```bash
+git rm --cached <file names>
+```
 Won't be deleted from your file system just keeps the local changes still
 
-##Help
-``git help``
-``git help <command>``
+###Help
+```bash
+git help
+```
+```bash
+git help <command>
+```
