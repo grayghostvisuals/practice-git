@@ -160,6 +160,10 @@ Creates a new branch and then switches to it
 VI Editor Quick Key Exit
 ``:wq + enter``
 
+Fetching a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
+``g fetch origin``
+``git checkout -t <remote>/<branch>``
+
 ##Pushing &amp; Pulling
 ``git push -u origin master (remote repo name, local branch name) -u`` 
 Lets you just run git push later on without specifying name and branch
