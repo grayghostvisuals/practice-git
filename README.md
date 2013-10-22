@@ -35,13 +35,19 @@ It's all good yo! Learning is the prize in this game.
 
 ## Typical and highly useful git commands
 
-``git clone git@github.com:<user_name>/the-repo-you-are-cloning.git``
+```bash
+git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
+```
 * Clones your remote origin repo locally
 
-``git fetch upstream``
+```bash
+git fetch upstream
+```
 * Pulls in the remote changes not present in your local repo. Downloads objects and references from another repository.
 
-``git merge upstream/master``
+```bash
+git merge upstream/master
+```
 * Merges any changes fetched into your working files
 
 ``git add <file>``
