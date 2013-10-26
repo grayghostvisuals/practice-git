@@ -3,3 +3,5 @@ I don't know why my push worked as it should because I did it incorrectly.  I di
 I'm about to push this file, I'm also wondering if it will get added to the open pull request.  Let's see.
 
 Update:  Yes it did go to the current pull request.  Sweet.  And I did it with git push origin master, so I'm still puzzled why git push upstream master worked as well.  Seems it shouldn't have.
+
+Update #2:  Oh, I get it.  I git remote added my own repo as upstream.  Oops.  Well, it all makes sense now.  +1 Practice-Git 
