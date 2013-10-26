@@ -40,7 +40,7 @@ git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
 Clones your remote origin repo locally
 
 ```bash
-git remote add origin git@github.com:<user_name>/<repo_name>.git
+git remote add upstream git@github.com:<user_name>/<repo_name>.git
 ```
 Creates a brand new remote repository.
 
