@@ -40,6 +40,11 @@ git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
 Clones your remote origin repo locally
 
 ```bash
+git remote add upstream git@github.com:<user_name>/<repo_name>.git
+```
+Creates a brand new remote repository.
+
+```bash
 git fetch upstream
 ```
 Pulls in the remote changes not present in your local repo. Downloads objects and references from another repository.
@@ -90,11 +95,6 @@ Remembers all the changes we've committed so far, in the order we committed them
 git log --summary
 ```
 See where new files were added for the first time or where files were deleted.
-
-```bash
-git remote add origin git@github.com:<user_name>/<repo_name>.git
-```
-Creates a brand new remote repository.
 
 ```bash
 git remote -v
