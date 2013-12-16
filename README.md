@@ -156,7 +156,7 @@ git diff --staged
 ```
 Gets the staged differences and displays what has changed since our last commit
 
-###Reverting
+### Reverting
 ```bash
 git reset HEAD <file>
 ```
@@ -321,9 +321,9 @@ git log --pretty=format:"%h
 Exactly how you want the output using placeholders (use git help log)
 
 ```bash
-Date Ranges
+git log --until <value>
 ```
-Git log --until
+Date Ranges. For example you could grab everything from the year 2013 using ``git log --until 2013``
 
 ### Removal
 ```bash
