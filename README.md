@@ -1,4 +1,4 @@
-##:octocat: Git Your Practice On!
+### :octocat: Git Your Practice On!
 
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
 * Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
@@ -7,6 +7,7 @@
 * Git Real [http://www.codeschool.com/courses/git-real](http://www.codeschool.com/courses/git-real)
 * How to GitHub: Fork, Branch, Track, Squash and Pull Request [http://gun.io/blog/how-to-github-fork-branch-and-pull-request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request)
 * Learn Git Online [http://learn.github.com/p/intro.html](http://learn.github.com/p/intro.html)
+* Teach Github [https://github.com/github/teach.github.com](https://github.com/github/teach.github.com)
 * Git: The Simple Guide [http://rogerdudler.github.com/git-guide](http://rogerdudler.github.com/git-guide)
 * Git Immersion [http://gitimmersion.com](http://gitimmersion.com)
 * Git Branching [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
@@ -27,12 +28,12 @@ and you're all like...
 
 This is where we make those mistakes ... so don't be scared :)
 
-###Instructions
+### Instructions
 
 Fork this repo and send me a Pull Request with anything from Grandma Peggy's Crumbled Oatmeal Cookie Recipe to your favorite Sublime Text 2 preferences.
 It's all good yo! Learning is the prize in this game.
 
-### Typical and highly useful git commands
+#### Typical & Highly Useful Git Commands
 
 ```bash
 git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
@@ -117,7 +118,7 @@ git remote prune origin
 Deletes branch locally if it has been removed remotely. Helps to remove stale references.
 
 ```bash
-git checkout <target>
+git checkout -- <target>
 ```
 Changes the desired target back to the state of the last commit. A target can be a file or a directory (for example).
 
