@@ -129,11 +129,11 @@ Rebase allows you to [easily change a series of commits, reordering, editing, or
 
 Be warned: it's considered bad practice to rebase commits which you have already pushed to a remote repo. Doing so may invoke the wrath of the git gods. [https://help.github.com/articles/interactive-rebase](https://help.github.com/articles/interactive-rebase)
 
-###Adding
+### Adding
 ```bash
 git add <list of files>
 ``` 
-(i.e. git add read me.md license.txt. Can be multiples)
+(i.e. ``git add readme.md license.txt``. Can be multiples)
 
 ```bash
 git add --all
@@ -145,32 +145,32 @@ git add *.txt
 ```
 Add all txt files in directory
 
-###Staging
+### Staging
 ```bash
 git diff
 ```
-Show unstated differences since last commit
+Show unstaged differences since last commit
 
 ```bash
 git diff --staged
 ```
-Gets the staged differences and doisplays what has changed since our last commit
+Gets the staged differences and displays what has changed since our last commit
 
 ###Reverting
 ```bash
 git reset HEAD <file>
 ```
-Head is the last commit on the current branch we are on. What if you stage something you didn't need to be staged? This is the key
+Head is the last commit on the current branch we are on. What if you stage something you didn't need to be staged? This is the key.
 
 ```bash
 git checkout -- <file>
 ```
-Blow away all changes to a file since last commit
+Reset all changes to a file since last commit
 
 ```bash
 git reset --soft HEAD^
 ```
-What if you regret commit? This will undo your last commit. (^ means move commit before HEAD and puts changes into staging).
+What if you regret a commit? This will undo your last commit. (^ means move commit before HEAD and puts changes into staging).
 
 ```bash
 git reset --hard HEAD^
@@ -187,7 +187,7 @@ git commit --amend -m "added another file to the commit'
 ```
 New commit message will override previous commit message
 
-###Remotes
+### Remotes
 "Remotes are kinda like bookmarks"
 
 ```bash
@@ -205,7 +205,7 @@ git remote rm <name>
 ```
 Remove remote repo
 
-###Cloning, Branching, Fetching &amp; Merging
+### Cloning, Branching, Fetching &amp; Merging
 ```bash
 git fetch
 ```
@@ -246,25 +246,20 @@ g fetch origin
 
 git checkout -t <remote>/<branch>
 ```
-Fetching a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
+Fetches a remote branch not available locally [also reference issue #7](https://github.com/grayghostvisuals/Practice-Git/issues/7)
 
-###Pushing &amp; Pulling
+### Pushing &amp; Pulling
 ```bash
-git push -u origin master (remote repo name, local branch name) -u
+git push -u origin master (remote repo name[origin], local branch name[master])
 ``` 
 Lets you just run git push later on without specifying name and branch
 
 ```bash
 git pull
 ```
-Pull changes in and syncs up your repo
+Pull changes in and syncs up your repo. Doesn't update local code
 
-```bash
-git pull
-```
-Fetches or syncs local with remote repo. Doesn't update local code
-
-###Branching
+### Branching
 ```bash
 git branch -r
 ```
@@ -290,7 +285,7 @@ git remote prune origin
 ```
 Deletes the branch locally if it has been removed remotely. Helps to remove stale references.
 
-###Rebasing
+### Rebasing
 "Merge commits are bad"
 
 ```bash
@@ -298,7 +293,7 @@ git rebase
 ```
 Move all changes to master local which are not in origin/master remote to a temporary area
 
-###History
+### History
 ```bash
 git log
 ```
@@ -323,14 +318,14 @@ Commit and history is one line
 ```bash
 git log --pretty=format:"%h
 ```
-Exactly how you want the output using placeholders ( use git help log )
+Exactly how you want the output using placeholders (use git help log)
 
 ```bash
 Date Ranges
 ```
 Git log --until
 
-###Removal
+### Removal
 ```bash
 git rm <filename>
 ```
@@ -339,9 +334,9 @@ Removes file completely
 ```bash
 git rm --cached <file names>
 ```
-Won't be deleted from your file system just keeps the local changes still
+Won't be deleted from your file system, but keeps the local changes still.
 
-###Help
+### Help
 ```bash
 git help
 ```
