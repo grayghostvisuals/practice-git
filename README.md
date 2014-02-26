@@ -1,17 +1,17 @@
 ### :octocat: Git Your Practice On!
 
 
-###UBC APP and THAT, WEEK 1: GIT PRACTICE
+#UBC APP and THAT, WEEK 1: GIT PRACTICE
 
 ### Instructions
 
-#If you have questions, don't hestate to post on Piazza!
+###### If you have questions, don't hestate to post on Piazza!
 
 1. Fork this repository and send me a Pull Request with whatever form of git (Visual or Commandline) you want
 2. Add your name (and whatever else you want) to the *very* bottom of this file
-3. Create
+3. Push your changes to *your forked* repository on github (not this one!) 
 
-4. Push your changes (step 2) back to this repository.
+4. Send me (this repo, not yours) a pull request!
 5. Replace you name with your github username in README.md and commit your changes
 6. Fetch your remote repo and merge it with your local one 
 
