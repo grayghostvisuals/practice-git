@@ -2,6 +2,7 @@
 
 
 #UBC APP and THAT, WEEK 1: GIT PRACTICE
+---------------------------------------------------------------------------------------------------------------------
 
 ### Instructions
 
@@ -20,7 +21,6 @@
 
 8. Create a new branch with the name of your GitHub username.
 9. Switch to your new branch and add some ASCII Art [http://www.glassgiant.com/ascii/](generate it here) beside your name
-
 10. Switch back to your master branch and merge your new branch into your master branch
 11. Push the changes to your forked repo 
 12. Send me another pull request with your newly add ASCII Art
@@ -30,9 +30,8 @@
 
 
 ---------------------------------------------------------------------------------------------------------------------
---------------------------------------------HELPFUL RESOURCES--------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------
-
+####HELPFUL RESOURCES
+* Git HOWTO: Branching and Merging: [http://gitready.com/beginner/2009/01/25/branching-and-merging.html](gitready.com/beginner/2009/01/25/branching-and-merging.html)
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
 * Git Ready [http://gitready.com](http://gitready.com)
 * Quick Command Practice [http://try.github.com](http://try.github.com)
@@ -46,9 +45,8 @@
 
 
 ---------------------------------------------------------------------------------------------------------------------
---------------------------------------------BASIC GIT COMMAND REFERENCE----------------------------------------------
+####BASIC GIT COMMAND REFERENCE
 ---------------------------------------------------------------------------------------------------------------------
-#### Typical & Highly Useful Git Commands
 
 ```bash
 git clone git@github.com:<user_name>/the-repo-you-are-cloning.git
