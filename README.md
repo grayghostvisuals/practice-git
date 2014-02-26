@@ -1,7 +1,44 @@
 ### :octocat: Git Your Practice On!
 
+
+#UBC APP and THAT, WEEK 1: GIT PRACTICE
+
+### Instructions
+
+###### If you have questions, don't hestate to post on Piazza!
+
+#######Part 1 - Fork and Clone
+1. Fork this repository and then clone it onto your local machine
+2. Add your name (and whatever else you want) to the *very* bottom of this file
+3. Push your changes to *your forked* repository on github (not this one!) 
+#######Part 2 - Fork and Pull
+4. Send me (this repo, not yours) a pull request!
+5. Replace you name with your github username in README.md and commit your changes
+6. Fetch your remote repo and merge it with your local one 
+
+#######Part 3 - Issues
+7. Create an issue on GitHub called: "Need moar ACII Arts" (or anyother name you want!) on GitHub. 
+   Add a description too! I'll close the issue when you've finished this exercise (step 10).
+#######Part 4 - Branching
+8. Create a new branch with the name of your GitHub username.
+9. Switch to your new branch and add some ASCII Art [http://www.glassgiant.com/ascii/](generate it here) beside your name
+10. Switch back to your master branch and merge your new branch into your master branch
+11. Delete your branch that you created in part 8
+
+
+#######Part 5 - Finishing Up
+12. Push the changes to your forked repo 
+13. Send me another pull request with your newly add ASCII Art
+
+14. You're *DONE*! If you are still curious check out [http://www.gitref.com](gitref.com) or look below for more commands. Also try forking and editing our website repository here: [github.com/AppsandThat/AppsandThat.io](Apps n That repo). I've created a few issues for you to solve
+ 
+
+
+---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------HELPFUL RESOURCES--------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
-* Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
 * Git Ready [http://gitready.com](http://gitready.com)
 * Quick Command Practice [http://try.github.com](http://try.github.com)
 * Git Real [http://www.codeschool.com/courses/git-real](http://www.codeschool.com/courses/git-real)
@@ -13,26 +50,9 @@
 * Git Branching [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
 
 
-Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
-Here we learn all things git. Feel free to send me Pull Requests just to discover what it's like when a Repo Master asks you
-
-<blockquote>
-"Can you squash your commits for us"
-</blockquote>
-
-and you're all like...
-
-<blockquote>
-"How the hell do I do that?"
-</blockquote>
-
-This is where we make those mistakes ... so don't be scared :)
-
-### Instructions
-
-Fork this repo and send me a Pull Request with anything from Grandma Peggy's Crumbled Oatmeal Cookie Recipe to your favorite Sublime Text 2 preferences.
-It's all good yo! Learning is the prize in this game.
-
+---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------BASIC GIT COMMAND REFERENCE----------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 #### Typical & Highly Useful Git Commands
 
 ```bash
