@@ -1,3 +1,4 @@
+//this is the real object reference
 // Object Reference
 var obj = document.getElementById('id');
 
