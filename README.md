@@ -1,5 +1,7 @@
 ### :octocat: Git Your Practice On!
 
+### Helpful Links
+
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
 * Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
 * Git Ready [http://gitready.com](http://gitready.com)
@@ -12,6 +14,8 @@
 * Git Immersion [http://gitimmersion.com](http://gitimmersion.com)
 * Git Branching [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
 
+
+### Overview
 
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
 Here we learn all things git. Feel free to send me Pull Requests just to discover what it's like when a Repo Master asks you
