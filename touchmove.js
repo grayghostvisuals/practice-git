@@ -19,3 +19,8 @@ obj.addEventListener('touchmove', function(event) {
 }, false);
 
 // unnecessary comment
+
+//this is another comment
+// and another
+
+plus a bug!
