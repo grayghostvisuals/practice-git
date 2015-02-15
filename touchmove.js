@@ -1,3 +1,4 @@
+//this is the real object reference
 // Object Reference
 var obj = document.getElementById('id');
 
@@ -18,3 +19,8 @@ obj.addEventListener('touchmove', function(event) {
 }, false);
 
 // unnecessary comment
+
+//this is another comment
+// and another
+
+plus a bug!
