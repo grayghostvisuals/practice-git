@@ -1,0 +1,6 @@
+# Pizza Party Grocery List
+
+* Pepperoni
+* Cheese
+* Dough
+* Pizza Sauce
