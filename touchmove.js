@@ -23,4 +23,4 @@ obj.addEventListener('touchmove', function(event) {
 //this is another comment
 // and another
 
-plus a bug!
+plus a bug!  // PS. fix the bug somebody!!

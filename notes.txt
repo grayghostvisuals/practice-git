@@ -1,0 +1,7 @@
+This is a new file! 
+
+1) So the idea is to make the commits locally first
+2) Then at some point PUSH your commits to your fork on GitHub
+3) Then at another point make a Pull Request to the Repository you forked from...
+
+That is the basic simplified flow then? 
