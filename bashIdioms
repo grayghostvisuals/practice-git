@@ -1,4 +1,4 @@
-# diff 2 properties files.. removing empty lines and comments and sorting beforethe diff.
+# diff 2 properties files.. removing empty lines and comments and sorting before the diff.
 # also shows an exampe of using anonymous pipes in bash to redirect more than 1 input file to a process from
 # a set of sub processes.
 
