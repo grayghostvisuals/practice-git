@@ -4,4 +4,7 @@
 
 diff <(sed -e '/^#/ d; /^$/ d;' $file1 | sort) <(sed -e '/^#/ d; /^$/ d;' $file2 | sort)
 
+# List the most recent files changes in a CVS tree.
+find $ws \( -type d \( -name CVS -o -name bin -o -name .metadata \) -prune \) -o -type f -mtime -2 -print
+
 
