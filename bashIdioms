@@ -7,4 +7,8 @@ diff <(sed -e '/^#/ d; /^$/ d;' $file1 | sort) <(sed -e '/^#/ d; /^$/ d;' $file2
 # List the most recent files changes in a CVS tree.
 find $ws \( -type d \( -name CVS -o -name bin -o -name .metadata \) -prune \) -o -type f -mtime -2 -print
 
+# diff 2 properties files.. removing empty lines and comments and sorting before the diff.
+# also shows an exampe of using anonymous pipes in bash to redirect more than 1 input file to a process from
+# a set of sub processes.
+diff <(sed -e '/^#/ d; /^$/ d;' $file1 | sort) <(sed -e '/^#/ d; /^$/ d;' $file2 | sort)
 
