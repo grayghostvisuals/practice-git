@@ -1,0 +1,46 @@
+#include<iostream>
+#include<vector>
+
+using  namespace std ;
+
+template < typename T > void printVector  ( const vector < T > &integers2) ;
+ 
+int main()
+{
+	
+	int size = 6;
+	int array[6] = {1,2,3,4,5,6};
+	
+	vector< int > integers ;
+	 cout<<" size of vector is "<< integers.size()<<endl<<" initial capacity of vector is "<<integers.capacity()<<endl;
+	 
+	 integers.push_back(2);
+     integers.push_back(3);
+	 integers.push_back(4);
+	 
+	 for(int i=0;i<4;i++)
+	   cout<<integers[i];
+	  cout<<endl;
+	 
+      cout<<" size of vector is "<< integers.size()<<endl<<" output capacity of vector is "<<integers.capacity()<<endl;
+      
+      // print normal array
+      printVector( integers);
+      vector < int > ::const_reverse_iterator revIt ;
+      vector < int > :: const_reverse_iterator tempIt = integers.rend();
+      
+      for(revIt = integers.rbegin();revIt != tempIt ; ++revIt)
+        cout<<*revIt<<"\t";
+        cout<<endl;
+	return 0;		 
+}
+
+template < typename T > void printVector ( const vector < T > &integers2)
+ {
+ 	typename vector < T > ::const_iterator constint,infi;
+ 	infi = integers2.end();
+ 	for(constint= integers2.begin() ; constint != infi;++constint)
+ 	   cout<<*constint<<"\t";
+ 	   cout<<endl;
+ 	   
+ }
