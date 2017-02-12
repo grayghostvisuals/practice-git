@@ -9,4 +9,6 @@ int main(void)
 	  printf("Blah\n");
 	  printf("hello\n");
 	  printf("another\n");
+	  printf("another 1\n");
+
 }
