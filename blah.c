@@ -7,4 +7,8 @@ int main(void)
   int i;
   for (i = 0; i < 200; i++)
 	  printf("Blah\n");
+	  printf("hello\n");
+	  printf("another\n");
+	  printf("another 1\n");
+
 }
