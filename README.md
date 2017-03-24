@@ -1,3 +1,4 @@
+LEARNING ON DOING
 ### :octocat: Git Your Practice On!
 
 * Git Reference [http://gitref.org/basic](http://gitref.org/basic)
