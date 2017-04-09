@@ -153,4 +153,29 @@ $ git commit -am "notes.txt, 4th commit, I think ..."
 -- Make more changes to notes.txt and do it again
 ---------------------------------------------------
 $ git commit -am "5th commit ..."
+[master e39458e] 5th commit ...
+ 1 file changed, 24 insertions(+), 8 deletions(-)
 
+---------------------------------------------------
+-- Update my GitHub account
+---------------------------------------------------
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.28 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local objects.
+To https://github.com/jross9/practice-git.git
+   9afbf5a..e39458e  master -> master
+
+---------------------------------------------------
+-- added the results of the last push
+---------------------------------------------------
+$ git commit -am "6th commit ..."
+
+---------------------------------------------------
+-- push again & then ask for pull request on GitHub
+---------------------------------------------------
+$ git push
+........
