@@ -5,3 +5,136 @@ This is a new file!
 3) Then at another point make a Pull Request to the Repository you forked from...
 
 That is the basic simplified flow then? 
+
+--- Update: that was over a year ago! Dec 24, 2015. Back then I did not get 
+very far. practice-git, is still my only repository! Now it's 4/9/2017 
+and I need to get back to learning Git again. 
+
+I managed to sync my fork of practice-git w/ by doing the following on my PC. 
+
+First I updated my PC to the latest Git installed Git-2.12.2.2-64-bit.exe 
+from https://git-scm.com/downloads
+
+---------------------------------------------------
+right-clicked “practice-git” folder from the explorer | clicked ‘Git Bash Here’
+
+---------------------------------------------------
+-- I did not have 'upstream' configured!
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git fetch upstream
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+---------------------------------------------------
+-- The only remote I had configured
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git remote -v
+origin  https://github.com/jross9/practice-git.git (fetch)
+origin  https://github.com/jross9/practice-git.git (push)
+
+---------------------------------------------------
+-- Add the 'upstream' remote repository
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git remote add upstream https://github.com/grayghostvisuals/practice-git
+
+---------------------------------------------------
+-- Now I have two configured ... 
+-- 'origin' (my fork)
+-- 'upstream' (the master practice-git GitHub site)
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git remote -v
+origin  https://github.com/jross9/practice-git.git (fetch)
+origin  https://github.com/jross9/practice-git.git (push)
+upstream        https://github.com/grayghostvisuals/practice-git (fetch)
+upstream        https://github.com/grayghostvisuals/practice-git (push)
+
+---------------------------------------------------
+-- try the fetch upstream again ...
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git fetch upstream
+remote: Counting objects: 109, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 109 (delta 10), reused 10 (delta 10), pack-reused 95
+Receiving objects: 100% (109/109), 16.71 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (40/40), completed with 3 local objects.
+From https://github.com/grayghostvisuals/practice-git
+ * [new branch]      master     -> upstream/master
+
+---------------------------------------------------
+-- I did not understand this step which I was reading from 
+-- https://help.github.com/articles/syncing-a-fork/
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+
+---------------------------------------------------
+-- merge the changes I previously fetched
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git merge upstream/master
+Updating 1a15c7f..9afbf5a
+Fast-forward
+ DonePracticing      |  1 +
+ Myfile              |  1 +
+ asas.txt            |  1 +
+ bashIdioms          | 14 ++++++++++++++
+ bits.py             | 17 +++++++++++++++++
+ blah.c              | 11 +++++++++--
+ deep_coder.c        |  8 ++++++++
+ hi.java             |  2 ++
+ lolol               | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ numberone           |  1 +
+ pi.py               |  8 ++++++++
+ pizza_recipe.txt    |  2 +-
+ practice-First      |  1 +
+ practice-git        |  1 +
+ sample new file.txt |  1 +
+ testing.txt         |  4 ++++
+ touch.txt           |  2 ++
+ tst.txt             |  1 +
+ 18 files changed, 119 insertions(+), 3 deletions(-)
+ create mode 100644 DonePracticing
+ create mode 100644 Myfile
+ create mode 100644 asas.txt
+ create mode 100644 bashIdioms
+ create mode 100644 bits.py
+ create mode 100644 deep_coder.c
+ create mode 100644 lolol
+ create mode 100644 numberone
+ create mode 100644 pi.py
+ create mode 100644 practice-First
+ create mode 160000 practice-git
+ create mode 100644 sample new file.txt
+ create mode 100644 touch.txt
+ create mode 100644 tst.txt
+
+---------------------------------------------------
+-- update my GitHub of it https://github.com/jross9/practice-git
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git push origin master
+Counting objects: 110, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (110/110), 16.33 KiB | 0 bytes/s, done.
+Total 110 (delta 41), reused 109 (delta 40)
+remote: Resolving deltas: 100% (41/41), completed with 3 local objects.
+To https://github.com/jross9/practice-git.git
+   1a15c7f..9afbf5a  master -> master
+
+---------------------------------------------------
+-- show's I have no changes 
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git status -s
+
