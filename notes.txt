@@ -173,9 +173,29 @@ To https://github.com/jross9/practice-git.git
 -- added the results of the last push
 ---------------------------------------------------
 $ git commit -am "6th commit ..."
+[master fddf505] 6th commit ...
+ 1 file changed, 25 insertions(+)
 
 ---------------------------------------------------
 -- push again & then ask for pull request on GitHub
 ---------------------------------------------------
 $ git push
-........
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 578 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/jross9/practice-git.git
+   e39458e..fddf505  master -> master
+
+---------------------------------------------------
+-- Test 7th commit ... what does it do to my pull request?
+---------------------------------------------------
+$ git commit -am "7th commit ..."
+
+---------------------------------------------------
+-- push again 
+---------------------------------------------------
+$ git push
+
