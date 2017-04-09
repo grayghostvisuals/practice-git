@@ -5,3 +5,197 @@ This is a new file!
 3) Then at another point make a Pull Request to the Repository you forked from...
 
 That is the basic simplified flow then? 
+
+--- Update: that was over a year ago! Dec 24, 2015. Back then I did not get 
+very far. practice-git, is still my only repository! Now it's 4/9/2017 
+and I need to get back to learning Git again. 
+
+I managed to sync my fork of practice-git w/ by doing the following on my PC. 
+
+First I updated my PC to the latest Git installed Git-2.12.2.2-64-bit.exe 
+from https://git-scm.com/downloads
+
+---------------------------------------------------
+-- Open a ‘Git Bash' command line prompt
+---------------------------------------------------
+right-clicked “practice-git” folder from the explorer | clicked ‘Git Bash Here’
+
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$
+
+---------------------------------------------------
+-- I did not have 'upstream' configured!
+---------------------------------------------------
+$ git fetch upstream
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+---------------------------------------------------
+-- The only remote I had configured
+---------------------------------------------------
+$ git remote -v
+origin  https://github.com/jross9/practice-git.git (fetch)
+origin  https://github.com/jross9/practice-git.git (push)
+
+---------------------------------------------------
+-- Add the 'upstream' remote repository
+---------------------------------------------------
+$ git remote add upstream https://github.com/grayghostvisuals/practice-git
+
+---------------------------------------------------
+-- Now I have two configured ... 
+-- 'origin' (my fork)
+-- 'upstream' (the master practice-git GitHub site)
+---------------------------------------------------
+$ git remote -v
+origin  https://github.com/jross9/practice-git.git (fetch)
+origin  https://github.com/jross9/practice-git.git (push)
+upstream        https://github.com/grayghostvisuals/practice-git (fetch)
+upstream        https://github.com/grayghostvisuals/practice-git (push)
+
+---------------------------------------------------
+-- try the fetch upstream again ...
+---------------------------------------------------
+$ git fetch upstream
+remote: Counting objects: 109, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 109 (delta 10), reused 10 (delta 10), pack-reused 95
+Receiving objects: 100% (109/109), 16.71 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (40/40), completed with 3 local objects.
+From https://github.com/grayghostvisuals/practice-git
+ * [new branch]      master     -> upstream/master
+
+---------------------------------------------------
+-- I did not understand this step which I was reading from 
+-- https://help.github.com/articles/syncing-a-fork/
+---------------------------------------------------
+$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+
+---------------------------------------------------
+-- merge the changes I previously fetched
+---------------------------------------------------
+$ git merge upstream/master
+Updating 1a15c7f..9afbf5a
+Fast-forward
+ DonePracticing      |  1 +
+ Myfile              |  1 +
+ asas.txt            |  1 +
+ bashIdioms          | 14 ++++++++++++++
+ bits.py             | 17 +++++++++++++++++
+ blah.c              | 11 +++++++++--
+ deep_coder.c        |  8 ++++++++
+ hi.java             |  2 ++
+ lolol               | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ numberone           |  1 +
+ pi.py               |  8 ++++++++
+ pizza_recipe.txt    |  2 +-
+ practice-First      |  1 +
+ practice-git        |  1 +
+ sample new file.txt |  1 +
+ testing.txt         |  4 ++++
+ touch.txt           |  2 ++
+ tst.txt             |  1 +
+ 18 files changed, 119 insertions(+), 3 deletions(-)
+ create mode 100644 DonePracticing
+ create mode 100644 Myfile
+ create mode 100644 asas.txt
+ create mode 100644 bashIdioms
+ create mode 100644 bits.py
+ create mode 100644 deep_coder.c
+ create mode 100644 lolol
+ create mode 100644 numberone
+ create mode 100644 pi.py
+ create mode 100644 practice-First
+ create mode 160000 practice-git
+ create mode 100644 sample new file.txt
+ create mode 100644 touch.txt
+ create mode 100644 tst.txt
+
+---------------------------------------------------
+-- update my GitHub of it https://github.com/jross9/practice-git
+---------------------------------------------------
+$ git push origin master
+Counting objects: 110, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (110/110), 16.33 KiB | 0 bytes/s, done.
+Total 110 (delta 41), reused 109 (delta 40)
+remote: Resolving deltas: 100% (41/41), completed with 3 local objects.
+To https://github.com/jross9/practice-git.git
+   1a15c7f..9afbf5a  master -> master
+
+---------------------------------------------------
+-- show's I have no changes 
+---------------------------------------------------
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$ git status -s
+
+---------------------------------------------------
+-- Edit notes.txt -- now show's notes.txt as modified
+---------------------------------------------------
+$ git status -s
+ M notes.txt
+
+---------------------------------------------------
+-- Bypass the staging --> git add ? 
+-- and do a commit ...
+---------------------------------------------------
+$ git commit -am "notes.txt, 4th commit, I think ..."
+[master c2143c7] notes.txt, 4th commit, I think ...
+ 1 file changed, 133 insertions(+)
+
+---------------------------------------------------
+-- Make more changes to notes.txt and do it again
+---------------------------------------------------
+$ git commit -am "5th commit ..."
+[master e39458e] 5th commit ...
+ 1 file changed, 24 insertions(+), 8 deletions(-)
+
+---------------------------------------------------
+-- Update my GitHub account
+---------------------------------------------------
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.28 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local objects.
+To https://github.com/jross9/practice-git.git
+   9afbf5a..e39458e  master -> master
+
+---------------------------------------------------
+-- added the results of the last push
+---------------------------------------------------
+$ git commit -am "6th commit ..."
+[master fddf505] 6th commit ...
+ 1 file changed, 25 insertions(+)
+
+---------------------------------------------------
+-- push again & then ask for pull request on GitHub
+---------------------------------------------------
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 578 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/jross9/practice-git.git
+   e39458e..fddf505  master -> master
+
+---------------------------------------------------
+-- Test 7th commit ... what does it do to my pull request?
+---------------------------------------------------
+$ git commit -am "7th commit ..."
+
+---------------------------------------------------
+-- push again 
+---------------------------------------------------
+$ git push
+
