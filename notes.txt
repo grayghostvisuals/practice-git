@@ -16,12 +16,16 @@ First I updated my PC to the latest Git installed Git-2.12.2.2-64-bit.exe
 from https://git-scm.com/downloads
 
 ---------------------------------------------------
+-- Open a ‘Git Bash' command line prompt
+---------------------------------------------------
 right-clicked “practice-git” folder from the explorer | clicked ‘Git Bash Here’
+
+jar@Win8 MINGW64 /d/FOS/practice-git (master)
+$
 
 ---------------------------------------------------
 -- I did not have 'upstream' configured!
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git fetch upstream
 fatal: 'upstream' does not appear to be a git repository
 fatal: Could not read from remote repository.
@@ -32,7 +36,6 @@ and the repository exists.
 ---------------------------------------------------
 -- The only remote I had configured
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git remote -v
 origin  https://github.com/jross9/practice-git.git (fetch)
 origin  https://github.com/jross9/practice-git.git (push)
@@ -40,7 +43,6 @@ origin  https://github.com/jross9/practice-git.git (push)
 ---------------------------------------------------
 -- Add the 'upstream' remote repository
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git remote add upstream https://github.com/grayghostvisuals/practice-git
 
 ---------------------------------------------------
@@ -48,7 +50,6 @@ $ git remote add upstream https://github.com/grayghostvisuals/practice-git
 -- 'origin' (my fork)
 -- 'upstream' (the master practice-git GitHub site)
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git remote -v
 origin  https://github.com/jross9/practice-git.git (fetch)
 origin  https://github.com/jross9/practice-git.git (push)
@@ -58,7 +59,6 @@ upstream        https://github.com/grayghostvisuals/practice-git (push)
 ---------------------------------------------------
 -- try the fetch upstream again ...
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git fetch upstream
 remote: Counting objects: 109, done.
 remote: Compressing objects: 100% (3/3), done.
@@ -72,7 +72,6 @@ From https://github.com/grayghostvisuals/practice-git
 -- I did not understand this step which I was reading from 
 -- https://help.github.com/articles/syncing-a-fork/
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git checkout master
 Already on 'master'
 Your branch is up-to-date with 'origin/master'.
@@ -80,7 +79,6 @@ Your branch is up-to-date with 'origin/master'.
 ---------------------------------------------------
 -- merge the changes I previously fetched
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git merge upstream/master
 Updating 1a15c7f..9afbf5a
 Fast-forward
@@ -121,7 +119,6 @@ Fast-forward
 ---------------------------------------------------
 -- update my GitHub of it https://github.com/jross9/practice-git
 ---------------------------------------------------
-jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git push origin master
 Counting objects: 110, done.
 Delta compression using up to 4 threads.
@@ -137,4 +134,23 @@ To https://github.com/jross9/practice-git.git
 ---------------------------------------------------
 jar@Win8 MINGW64 /d/FOS/practice-git (master)
 $ git status -s
+
+---------------------------------------------------
+-- Edit notes.txt -- now show's notes.txt as modified
+---------------------------------------------------
+$ git status -s
+ M notes.txt
+
+---------------------------------------------------
+-- Bypass the staging --> git add ? 
+-- and do a commit ...
+---------------------------------------------------
+$ git commit -am "notes.txt, 4th commit, I think ..."
+[master c2143c7] notes.txt, 4th commit, I think ...
+ 1 file changed, 133 insertions(+)
+
+---------------------------------------------------
+-- Make more changes to notes.txt and do it again
+---------------------------------------------------
+$ git commit -am "5th commit ..."
 
