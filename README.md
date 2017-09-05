@@ -1,6 +1,6 @@
 ### :octocat: Git Your Practice On!
 
-* Git Reference [http://gitref.org/basic](http://gitref.org/basic)
+* Git Reference [https://help.github.com/categories/github-pages-basics/](https://help.github.com/categories/github-pages-basics/)
 * Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
 * Git Ready [http://gitready.com](http://gitready.com)
 * Quick Command Practice [http://try.github.com](http://try.github.com)
