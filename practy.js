@@ -3,3 +3,5 @@ var thing = function() {
 }
 
 thing();
+
+console.log('check out this awesome new feature!');
