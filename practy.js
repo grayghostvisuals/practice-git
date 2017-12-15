@@ -5,3 +5,4 @@ var thing = function() {
 thing();
 
 console.log('check out this awesome new feature!');
+console.log('check out this awesome new feature again!');
