@@ -1,3 +1,3 @@
-do 5.times
+5.times do
   puts "Hello World!"
 end
