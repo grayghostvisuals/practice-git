@@ -1,1 +1,3 @@
-<?php `git pull`; ?>
+<?php `git pull`;
+echo "Hi how r u?";
+?>
