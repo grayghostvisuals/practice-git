@@ -1,0 +1,21 @@
+define headers
+
+set character to new Character
+set character.lives to 3
+set character.health to 100
+
+define async trigger move:
+	if user.press is UP_ARROW
+	move character UP
+	if user.press is DOWN_ARROW
+	move character down
+	if user.press is LEFT_ARROW
+	move character left
+	if user.press is RIGHT_ARROW
+	move character right
+end trigger
+
+start code
+while character.lives greater than 0
+	call game
+end code
