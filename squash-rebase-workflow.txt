@@ -1,0 +1,12 @@
+https://blog.carbonfive.com/2017/08/28/always-squash-and-rebase-your-git-commits/
+
+git pull origin master
+git checkout -b branch name
+git log --graph --decorate --pretty=oneline --abbrev-commit
+
+# Time to squash and rebase to 1 commit
+git rebase -i Head~{NUMBER OF COMMITS]
+
+or
+
+git rebase -i [SHA]
