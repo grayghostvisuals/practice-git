@@ -1,4 +1,0 @@
-Check all the things!
-
-When using wildcards you want to be extra careful when doing commits. Make sure to check what files and folders are staged by using git status before you do the actual commit. This way you can be sure you're committing only the things you want.
-

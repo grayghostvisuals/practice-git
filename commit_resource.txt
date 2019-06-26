@@ -1,3 +1,0 @@
-This is a great website for writing quality commit messages.
-
-https://chris.beams.io/posts/git-commit/

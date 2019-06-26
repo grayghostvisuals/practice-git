@@ -1,3 +1,0 @@
-1.hello world
-2.good bye
-3.welcome
