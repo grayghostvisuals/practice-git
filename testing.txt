@@ -1,6 +1,0 @@
-xyz testing
-helo
-Testing testing testing
-First test commit!
-Testing Pull Request !
-Testing blah

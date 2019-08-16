@@ -1,2 +1,0 @@
-Sample file
-Added some text to existing sample file.
