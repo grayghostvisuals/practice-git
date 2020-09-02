@@ -1,8 +1,8 @@
 ### :octocat: Git Your Practice On!
 
-* Git Reference
+
 * [19 Git Tips for Everyday use](http://www.alexkras.com/19-git-tips-for-everyday-use) 
-[https://help.github.com/categories/github-pages-basics/](https://help.github.com/categories/github-pages-basics/)
+* Git Reference [https://help.github.com/categories/github-pages-basics/](https://help.github.com/categories/github-pages-basics/)
 * Pro Git Online Book [http://git-scm.com/book](http://git-scm.com/book)
 * Git Ready [http://gitready.com](http://gitready.com)
 * Quick Command Practice [http://try.github.com](http://try.github.com)
