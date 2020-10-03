@@ -258,7 +258,7 @@ Lets you just run git push later on without specifying name and branch
 ```bash
 git pull
 ```
-Pull changes in and syncs up your repo. Doesn't update local code
+Pull changes in and sync up your repo. Doesn't update local code
 
 ### Branching
 ```bash
