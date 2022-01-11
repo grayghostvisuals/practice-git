@@ -1,4 +1,4 @@
-Thanks yo for the practice project :) Gonna mess around here a little.
+practice project
 
-Nora
-Hello
+hello world
+git practice 123
