@@ -1,0 +1,2 @@
+Hey, this is just a sample text to test my knowledge on version control.
+Thank you.
