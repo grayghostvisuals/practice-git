@@ -16,6 +16,7 @@
 * Git Cheat Sheet [https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 * Git Cheat Sheet by Tim Green [https://github.com/tiimgreen/github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet)
 * Hugo's Git Cheat Sheet [http://codepen.io/HugoGiraudel/full/d7a439ac945a29dcad9f02d831b731e6](http://codepen.io/HugoGiraudel/full/d7a439ac945a29dcad9f02d831b731e6)
+* GitHub Git Cheat Sheet [https://education.github.com/git-cheat-sheet-education.pdf]
 
 
 Welcome to my practice git repository where you can eff up as much as you'd like plus work with a real, living, breathing person on the other side.
