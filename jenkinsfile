@@ -1,0 +1,13 @@
+pipeline{
+  agent any
+  stages{
+   stage('initialize'){
+     steps{
+        sh ***
+                echo "PATH=${PATH}"
+                ECHO "M2_HOME =${M2_HOME}"
+           ***
+          }
+       }
+     }
+   }  
