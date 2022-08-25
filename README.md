@@ -300,7 +300,7 @@ Move all changes to master local which are not in origin/master remote to a temp
 ```bash
 git log
 ```
-Viewing the commits history
+View the snapshots of the commits history
 
 ```bash
 git config --global color.ui true
