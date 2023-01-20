@@ -1,1 +1,8 @@
 lorem
+<<<<<<< HEAD
+hmm
+=======
+
+
+another one
+>>>>>>> changeSomething
