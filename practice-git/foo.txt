@@ -1,2 +1,12 @@
-lorem_dev1
-Hello
+A practice git repository
+where you can eff up
+as much as you'd like
+plus work with a real,
+living, breathing person
+on the other side. Here
+we learn all things git.
+Feel free to send Pull Requests
+to see what it's like when
+someone asks you "Can you squash
+your commits for us" and you're
+all like "How the hell do I do that?"
