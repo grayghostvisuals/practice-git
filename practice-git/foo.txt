@@ -1,3 +1,5 @@
+lorem_dev2
+Hello
 A practice git repository
 where you can eff up
 as much as you'd like
