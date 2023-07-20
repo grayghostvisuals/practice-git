@@ -29,7 +29,7 @@ and you're all like...
 "How the hell do I do that?"
 </blockquote>
 
-This is where we make those mistakes ... so don't be scared :)
+This is where we make those mistakes ... so don't be scared :-)
 
 ### Instructions
 
