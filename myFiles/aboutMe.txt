@@ -1,0 +1,5 @@
+I am trying to learn git and github so that I could learn JavaScript very well
+because I am trying to be a Web3 developer and learn Solidity and Ethereum Blockchiain
+
+Learing to use git and github is fairly easy and slowing but steadily I am getting the hang of it.
+
