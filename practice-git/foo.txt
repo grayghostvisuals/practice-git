@@ -1,1 +1,2 @@
 lorem
+Ok, here are my new changes. Let's commit these.
